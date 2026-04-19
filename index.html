@@ -42,19 +42,17 @@
         <section id="hero" class="hero">
             <div class="container hero__container">
 
-                <!-- LEFT CONTENT -->
-                <div class="hero__content">
+                <div class="hero__top">
                     <span class="hero__badge">
                         DIGITAL SOLUTION FOR AUTOMOTIVE WORKSHOPS
                     </span>
 
                     <h1 class="hero__title">
-                        Manage your workshop with more
-                        <span>control</span>, speed and confidence
+                        Manage your workshop with more <span>control</span>, speed and confidence
                     </h1>
 
                     <p class="hero__description">
-                        Organize vehicles, work orders, payments and customers in one platform.
+                        Organize vehicles, work orders, payments and customers in one place.
                         Reduce manual work and improve your service efficiency.
                     </p>
 
@@ -64,47 +62,60 @@
                     </div>
                 </div>
 
-                <!-- RIGHT CONTENT (DASHBOARD MOCK) -->
-                <div class="hero__visual">
-
+                <div class="hero__bottom">
                     <div class="dashboard">
 
-                        <!-- Sidebar -->
                         <div class="dashboard__sidebar">
-                            <div class="sidebar__item active"></div>
-                            <div class="sidebar__item"></div>
-                            <div class="sidebar__item"></div>
-                            <div class="sidebar__item"></div>
+                            <div class="sidebar__top">
+                                <div class="sidebar__line sidebar__line--lg"></div>
+                                <div class="sidebar__pill sidebar__pill--active"></div>
+                                <div class="sidebar__pill"></div>
+                                <div class="sidebar__pill"></div>
+                            </div>
+
+                            <div class="sidebar__menu">
+                                <p class="sidebar__menu-item sidebar__menu-item--active">Dashboard</p>
+                                <p class="sidebar__menu-item">Vehicles</p>
+                                <p class="sidebar__menu-item">Work Orders</p>
+                                <p class="sidebar__menu-item">Customers</p>
+                                <p class="sidebar__menu-item">Billing</p>
+                                <p class="sidebar__menu-item">Reports</p>
+                            </div>
+
+                            <div class="sidebar__bottom">
+                                <div class="sidebar__pill sidebar__pill--wide"></div>
+                                <div class="sidebar__pill sidebar__pill--wide"></div>
+                            </div>
                         </div>
 
-                        <!-- Content -->
-                        <div class="dashboard__content">
-
+                        <div class="dashboard__main">
                             <div class="dashboard__cards">
-                                <div class="card">
-                                    <p>Active Work Orders</p>
-                                    <h3>18</h3>
-                                    <span>+12% this week</span>
+                                <div class="metric-card">
+                                    <p class="metric-card__label">ACTIVE WORK ORDERS</p>
+                                    <h3 class="metric-card__value">18</h3>
+                                    <span class="metric-card__meta metric-card__meta--positive">↑ 12% from last
+                                        week</span>
                                 </div>
 
-                                <div class="card">
-                                    <p>Daily Revenue</p>
-                                    <h3>$2,450</h3>
-                                    <span>Target: $4k</span>
+                                <div class="metric-card">
+                                    <p class="metric-card__label">DAILY REVENUE</p>
+                                    <h3 class="metric-card__value">$2,450</h3>
+                                    <span class="metric-card__meta">Target: $4k</span>
                                 </div>
 
-                                <div class="card">
-                                    <p>Vehicles in Service</p>
-                                    <h3>12</h3>
-                                    <span>3 bays available</span>
+                                <div class="metric-card">
+                                    <p class="metric-card__label">VEHICLES IN SERVICE</p>
+                                    <h3 class="metric-card__value">12</h3>
+                                    <span class="metric-card__meta">3 bays available</span>
                                 </div>
                             </div>
 
-                            <div class="dashboard__chart"></div>
-
+                            <div class="dashboard__preview">
+                                <div class="dashboard__preview-overlay"></div>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
 
             </div>
