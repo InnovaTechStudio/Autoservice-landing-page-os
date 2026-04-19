@@ -697,6 +697,118 @@
     color: var(--text-light);
 }
 
+/*simplycity*/
+.simplicity {
+    padding: 92px 0 88px;
+}
+
+.simplicity__top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 34px;
+}
+
+.simplicity__header {
+    max-width: 760px;
+}
+
+.simplicity__title {
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 14px;
+}
+
+.simplicity__subtitle {
+    font-size: 1.08rem;
+    line-height: 1.75;
+    color: var(--text-light);
+    max-width: 700px;
+}
+
+.simplicity__controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.simplicity__arrow {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 1.1rem;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.05);
+    transition: 0.2s ease;
+}
+
+.simplicity__arrow:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.simplicity__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 24px;
+}
+
+.simplicity__card {
+    border-radius: 24px;
+    overflow: hidden;
+    background: #f1f5f9;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.07);
+}
+
+.simplicity__image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.simplicity__image--one {
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.08), rgba(15, 23, 42, 0.08)),
+        url("img/simplicity-1.jpg") center/cover no-repeat,
+        linear-gradient(135deg, #d8deea, #eef2f7);
+}
+
+.simplicity__image--two {
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.08), rgba(15, 23, 42, 0.08)),
+        url("img/simplicity-2.jpg") center/cover no-repeat,
+        linear-gradient(135deg, #d8deea, #eef2f7);
+}
+
+.simplicity__image--three {
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.08), rgba(15, 23, 42, 0.08)),
+        url("img/simplicity-3.jpg") center/cover no-repeat,
+        linear-gradient(135deg, #d8deea, #eef2f7);
+}
+
+.simplicity__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    color: var(--text-light);
+    font-size: 0.98rem;
+    flex-wrap: wrap;
+}
+
+.simplicity__bottom span {
+    color: #94a3b8;
+}
+
 @media (max-width: 992px) {
     .navbar__menu {
         position: absolute;
@@ -956,6 +1068,40 @@
 
         .step-card__number {
             margin: 0 auto 20px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .simplicity__top {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .simplicity__gallery {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .simplicity {
+            padding: 72px 0;
+        }
+
+        .simplicity__title {
+            font-size: 2.2rem;
+        }
+
+        .simplicity__subtitle {
+            font-size: 1rem;
+        }
+
+        .simplicity__image {
+            height: 240px;
+        }
+
+        .simplicity__bottom {
+            gap: 10px;
+            font-size: 0.92rem;
         }
     }
 }
