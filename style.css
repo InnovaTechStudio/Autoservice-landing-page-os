@@ -1032,6 +1032,89 @@
     color: rgba(255, 255, 255, 0.82);
 }
 
+/*footer*/
+.footer {
+    background: #0f172a;
+    color: #ffffff;
+    padding-top: 64px;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+    align-items: start;
+    padding-bottom: 40px;
+}
+
+.footer__brand {
+    max-width: 460px;
+}
+
+.footer__logo-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.footer__logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.footer__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.footer__description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.footer__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.footer__column h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #ffffff;
+}
+
+.footer__column a {
+    display: block;
+    color: rgba(255, 255, 255, 0.72);
+    margin-bottom: 12px;
+    font-size: 0.98rem;
+    transition: 0.2s ease;
+}
+
+.footer__column a:hover {
+    color: #ffffff;
+}
+
+.footer__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer__bottom-container {
+    padding: 18px 0 22px;
+}
+
+.footer__bottom p {
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 0.92rem;
+}
+
+
 @media (max-width: 992px) {
     .navbar__menu {
         position: absolute;
@@ -1376,6 +1459,31 @@
 
         .cta__text {
             font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .footer__container {
+            grid-template-columns: 1fr;
+            gap: 36px;
+        }
+
+        .footer__links {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .footer {
+            padding-top: 48px;
+        }
+
+        .footer__links {
+            grid-template-columns: 1fr;
+        }
+
+        .footer__description {
+            font-size: 0.96rem;
         }
     }
 }
