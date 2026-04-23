@@ -263,7 +263,7 @@ const translations = {
    LANG TOGGLE
 ========================= */
 // Set english as default language
-let currentLang = 'ns';
+let currentLang = 'en';
 
 function setLanguage(lang) {
     currentLang = lang;
