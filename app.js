@@ -349,3 +349,6 @@ document.querySelector('.contact__submit').addEventListener('click', () => {
    LUCIDE ICONS
 ========================= */
 lucide.createIcons();
+
+// Apply default language on page load
+setLanguage(currentLang);
